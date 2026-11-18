@@ -1,0 +1,18 @@
+==============================================================================
+FIGURE LABEL AUDIT  /  English-only check
+==============================================================================
+Figure                   Title                          X-axis    Y-axis          Legend
+------------------------------------------------------------------------------
+Fig3-14_Metric.png       Trend of Log Quality Metrics   Window    Error Rate      Parse Failure Rate, Duplicate Rate, Drift Rate, Disorder Rate
+Fig3-15_Baseline.png     Baseline Comparison            Window    Quality Score   Single Indicator, Equal Weight, Manual Weight, Proposed
+Fig3-16_Ablation.png     Ablation Study                 Window    Quality Score   Full Model, w/o FAHP, w/o Multi-Metric, w/o Score Fusion
+Fig3-17_ARIMA.png        ARIMA Prediction               Window    Quality Score   Real Score, ARIMA Prediction, Train/Test Split
+Fig3-18_Quality.png      Log Quality Score Trend        Window    Quality Score   Quality Score, Average, Good Threshold, Warning Threshold
+Fig3-19_Alert.png        Log Quality Warning            Window    Quality Score   Quality Score, Warning Window
+------------------------------------------------------------------------------
+Figures generated : 6 / 6
+Text items checked: 155
+Chinese characters found : 0
+Missing figures : None
+VERDICT : PASS - all experiment figures are ENGLISH ONLY (no Chinese text).
+==============================================================================

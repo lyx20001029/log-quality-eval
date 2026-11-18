@@ -1,0 +1,5 @@
+﻿Method,Mean Score
+Full Model,88.8936
+w/o FAHP,86.348
+w/o Multi-Metric,78.2488
+w/o Score Fusion,83.8328

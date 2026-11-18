@@ -1,0 +1,5 @@
+﻿Method,Mean,Std,Max,Min
+Single Indicator,85.75,10.5848,100.0,60.0
+Equal Weight,88.955,7.6982,100.0,71.0
+Manual Weight,88.2315,8.2082,100.0,71.6
+Proposed,88.0553,8.3359,100.0,71.07

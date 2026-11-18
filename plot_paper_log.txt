@@ -1,0 +1,25 @@
+======================================================================
+Loading experiment results...
+======================================================================
+metrics.csv               (200, 14)
+score.csv                 (200, 23)
+baseline.csv              (200, 5)
+ablation.csv              (200, 5)
+arima_prediction.csv      (200, 4)
+arima_error.csv           (60, 2)
+alert.csv                 (200, 3)
+======================================================================
+Experiment data loaded.
+======================================================================
+======================================================================
+Generating figures...
+======================================================================
+Saved -> C:\Users\83410\Desktop\前面实验\前面实验\pythonProject2\res_new\Fig3-14_Metric.png
+Saved -> C:\Users\83410\Desktop\前面实验\前面实验\pythonProject2\res_new\Fig3-15_Baseline.png
+Saved -> C:\Users\83410\Desktop\前面实验\前面实验\pythonProject2\res_new\Fig3-16_Ablation.png
+Saved -> C:\Users\83410\Desktop\前面实验\前面实验\pythonProject2\res_new\Fig3-17_ARIMA.png
+绘制日志质量趋势图
+Saved -> C:\Users\83410\Desktop\前面实验\前面实验\pythonProject2\res_new\Fig3-19_Alert.png
+======================================================================
+All figures generated.
+======================================================================

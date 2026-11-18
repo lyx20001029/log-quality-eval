@@ -1,0 +1,5 @@
+﻿Method,Mean,Std,Max,Min
+Full Model,88.8936,6.2297,98.0,82.0
+w/o FAHP,86.348,6.4717,95.0,78.0
+w/o Multi-Metric,78.2488,8.2383,90.0,68.0
+w/o Score Fusion,83.8328,6.8405,93.0,74.0

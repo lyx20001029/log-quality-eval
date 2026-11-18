@@ -1,0 +1,51 @@
+======================================================================
+Loading experiment results...
+======================================================================
+metrics.csv               (200, 14)
+score.csv                 (200, 23)
+baseline.csv              (200, 5)
+ablation.csv              (200, 5)
+arima_prediction.csv      (200, 4)
+arima_error.csv           (60, 2)
+alert.csv                 (200, 3)
+======================================================================
+Experiment data loaded.
+======================================================================
+======================================================================
+Generating figures...
+======================================================================
+Saved -> C:\Users\83410\Desktop\前面实验\pythonProject2\res_new\Fig3-14_Metric.png
+Saved -> C:\Users\83410\Desktop\前面实验\pythonProject2\res_new\Fig3-15_Baseline.png
+Saved -> C:\Users\83410\Desktop\前面实验\pythonProject2\res_new\Fig3-16_Ablation.png
+Saved -> C:\Users\83410\Desktop\前面实验\pythonProject2\res_new\Fig3-17_ARIMA.png
+Drawing log quality score trend...
+Saved -> C:\Users\83410\Desktop\前面实验\pythonProject2\res_new\Fig3-18_Quality.png
+Saved -> C:\Users\83410\Desktop\前面实验\pythonProject2\res_new\Fig3-19_Alert.png
+======================================================================
+All figures generated.
+======================================================================
+======================================================================
+Figure labels  |  title / x-axis / y-axis = Chinese  |  legend = English
+======================================================================
+Fig3-14_Metric.png       日志质量指标变化趋势      x=窗口     y=错误率       legend=Parse Failure Rate, Duplicate Rate, Drift Rate, Disorder Rate
+Fig3-15_Baseline.png     基线方法对比          x=窗口     y=质量评分      legend=Single Indicator, Equal Weight, Manual Weight, Proposed
+Fig3-16_Ablation.png     消融实验            x=窗口     y=质量评分      legend=Full Model, w/o FAHP, w/o Multi-Metric, w/o Score Fusion
+Fig3-17_ARIMA.png        ARIMA 预测        x=窗口     y=质量评分      legend=Real Score, ARIMA Prediction, Train/Test Split
+Fig3-18_Quality.png      日志质量评分趋势        x=窗口     y=质量评分      legend=Quality Score, Average, Good Threshold, Warning Threshold
+Fig3-19_Alert.png        日志质量预警          x=窗口     y=质量评分      legend=Quality Score, Warning Window
+======================================================================
+======================================================================
+PNG files on disk:
+  Fig3-14_Metric.png       OK
+  Fig3-15_Baseline.png     OK
+  Fig3-16_Ablation.png     OK
+  Fig3-17_ARIMA.png        OK
+  Fig3-18_Quality.png      OK
+  Fig3-19_Alert.png        OK
+----------------------------------------------------------------------
+Titles / axes : Chinese
+Legends       : English (unchanged)
+Missing files : None
+RESULT: OK
+Figure directory: C:\Users\83410\Desktop\前面实验\pythonProject2\res_new
+======================================================================

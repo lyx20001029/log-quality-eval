@@ -1,0 +1,230 @@
+Metric validation passed.
+
+======================================================================
+Log Data Quality Evaluation and Quantification Experiment
+Log Quality Evaluation Experiment
+======================================================================
+
+============================================================
+Step1  Generate windowed logs
+============================================================
+Raw logs saved to:
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\data\raw_log.csv
+   log_id  window           timestamp  ... duplicate disorder drift
+0       1       1 2026-01-01 00:02:01  ...         0        0     0
+1       2       1 2026-01-01 00:03:48  ...         0        0     0
+2       3       1 2026-01-01 00:09:46  ...         0        0     0
+3       4       1 2026-01-01 00:07:31  ...         0        0     0
+4       5       1 2026-01-01 00:01:22  ...         0        0     0
+
+[5 rows x 10 columns]
+
+============================================================
+Step2  Compute log quality metrics
+============================================================
+======================================================================
+Window quality metrics computed
+Results saved to:
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\metrics.csv
+======================================================================
+
+================== Metric Statistics ==================
+Windows: 200
+Total logs: 10000
+
+Average Parse Failure Rate: 0.1425
+Average Duplicate Rate: 0.1134
+Average Drift Rate: 0.1012
+Average Disorder Rate: 0.0847
+
+Parse Failure Logs: 1425
+Duplicate Logs: 1134
+Drift Logs: 1012
+Disorder Logs: 847
+==============================================
+Metric statistics saved to:
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\metric_statistics.csv
+
+============================================================
+Step3  Compute FAHP weights
+============================================================
+
+Weights saved to:
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\weight.csv
+======================================================================
+FAHP Weight Results
+======================================================================
+          Metric    Weight
+0  Parse Failure  0.423589
+1      Duplicate  0.227045
+2          Drift  0.227045
+3       Disorder  0.122321
+
+λmax = 4.010334
+CI    = 0.003445
+CR    = 0.003827
+
+Consistency check: PASS
+
+============================================================
+Step4  Compute overall quality score
+============================================================
+
+======================================================================
+Overall quality score computed
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\score.csv
+======================================================================
+
+========== Score Statistics ==========
+Windows: 200
+
+Mean score: 88.06
+Max score: 100.0
+Min score: 71.07
+
+Grade distribution:
+grade
+Excellent    89
+Good         69
+Medium       42
+Name: count, dtype: int64
+
+Dominant defect distribution:
+dominant_defect
+Parse Failure Rate    184
+Duplicate Rate         11
+Drift Rate              5
+Name: count, dtype: int64
+
+
+============================================================
+Step5  Baseline comparison experiment
+============================================================
+Starting baseline experiment
+baseline.csvSaved to: C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\baseline.csv
+Baseline trend sampling completed
+Baseline experiment completed
+
+============================================================
+Step6  Ablation experiment
+============================================================
+============================================================
+Starting ablation experiment...
+============================================================
+ablation.csv saved
+ablation_sample.csv saved
+ablation_mean.csv saved
+Table3-12_Ablation.csv saved
+============================================================
+Ablation experiment completed!
+Output directory:
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result
+============================================================
+
+============================================================
+Step7  ARIMA trend prediction experiment
+============================================================
+============================================================
+Starting ARIMA prediction experiment
+Saved to: C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\arima_prediction.csv
+Saved to: C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\arima_test_result.csv
+Saved to: C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\arima_error.csv
+ARIMA prediction completed
+============================================================
+
+============================================================
+Step8  Model performance evaluation
+============================================================
+Starting model evaluation
+Model evaluation completed
+Results saved to: C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\evaluation_result.csv
+
+============================================================
+Step9  Log quality alert experiment
+============================================================
+Starting log quality alert analysis
+Alert results saved to: C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\alert.csv
+
+========== Alert Statistics ==========
+Alert
+Normal     187
+Warning     13
+Name: count, dtype: int64
+
+
+============================================================
+Step10  Generate publication figures
+============================================================
+======================================================================
+Loading experiment results...
+======================================================================
+metrics.csv               (200, 14)
+score.csv                 (200, 23)
+baseline.csv              (200, 5)
+ablation.csv              (200, 5)
+arima_prediction.csv      (200, 4)
+arima_error.csv           (60, 2)
+alert.csv                 (200, 3)
+======================================================================
+Experiment data loaded.
+======================================================================
+======================================================================
+Generating figures...
+======================================================================
+Saved -> C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\res_new\Fig3-14_Metric.png
+Saved -> C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\res_new\Fig3-15_Baseline.png
+Saved -> C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\res_new\Fig3-16_Ablation.png
+Saved -> C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\res_new\Fig3-17_ARIMA.png
+Drawing log quality score trend...
+Saved -> C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\res_new\Fig3-18_Quality.png
+Saved -> C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\res_new\Fig3-19_Alert.png
+======================================================================
+All figures generated.
+======================================================================
+======================================================================
+Figure labels  |  title / x-axis / y-axis = Chinese  |  legend = English
+======================================================================
+Fig3-14_Metric.png       日志质量指标变化趋势      x=窗口     y=错误率       legend=Parse Failure Rate, Duplicate Rate, Drift Rate, Disorder Rate
+Fig3-15_Baseline.png     基线方法对比          x=窗口     y=质量评分      legend=Single Indicator, Equal Weight, Manual Weight, Proposed
+Fig3-16_Ablation.png     消融实验            x=窗口     y=质量评分      legend=Full Model, w/o FAHP, w/o Multi-Metric, w/o Score Fusion
+Fig3-17_ARIMA.png        ARIMA 预测        x=窗口     y=质量评分      legend=Real Score, ARIMA Prediction, Train/Test Split
+Fig3-18_Quality.png      日志质量评分趋势        x=窗口     y=质量评分      legend=Quality Score, Average, Good Threshold, Warning Threshold
+Fig3-19_Alert.png        日志质量预警          x=窗口     y=质量评分      legend=Quality Score, Warning Window
+======================================================================
+
+============================================================
+Step11  Organize experiment results
+============================================================
+============================================================
+Organizing experiment results...
+Copied: baseline.csv
+Copied: baseline_sample.csv
+Copied: baseline_mean.csv
+Copied: ablation.csv
+Copied: ablation_sample.csv
+Copied: ablation_mean.csv
+Copied: arima_prediction.csv
+Copied: arima_test_result.csv
+Copied: arima_error.csv
+Copied: Table3-11_Baseline.csv
+Copied: Table3-12_Ablation.csv
+Figure copied: Fig3-14_Metric.png
+Figure copied: Fig3-15_Baseline.png
+Figure copied: Fig3-16_Ablation.png
+Figure copied: Fig3-17_ARIMA.png
+Figure copied: Fig3-18_Quality.png
+Figure copied: Fig3-19_Alert.png
+Experiment results organized
+Output directory: C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result\experiment_result
+============================================================
+
+
+======================================================================
+All experiment steps completed!
+
+Results directory:
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\result
+
+Figures directory:
+C:\Users\83410\WorkBuddy\2026-11-11-15-11-51\前面实验\前面实验\pythonProject2\res_new
+======================================================================

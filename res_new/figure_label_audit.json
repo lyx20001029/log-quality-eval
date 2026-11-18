@@ -1,0 +1,89 @@
+[
+  {
+    "figure": "Fig3-14_Metric.png",
+    "title": "Trend of Log Quality Metrics",
+    "xlabel": "Window",
+    "ylabel": "Error Rate",
+    "legend": [
+      "Parse Failure Rate",
+      "Duplicate Rate",
+      "Drift Rate",
+      "Disorder Rate"
+    ],
+    "text_items_checked": 24,
+    "chinese_characters_found": 0,
+    "language": "English"
+  },
+  {
+    "figure": "Fig3-15_Baseline.png",
+    "title": "Baseline Comparison",
+    "xlabel": "Window",
+    "ylabel": "Quality Score",
+    "legend": [
+      "Single Indicator",
+      "Equal Weight",
+      "Manual Weight",
+      "Proposed"
+    ],
+    "text_items_checked": 28,
+    "chinese_characters_found": 0,
+    "language": "English"
+  },
+  {
+    "figure": "Fig3-16_Ablation.png",
+    "title": "Ablation Study",
+    "xlabel": "Window",
+    "ylabel": "Quality Score",
+    "legend": [
+      "Full Model",
+      "w/o FAHP",
+      "w/o Multi-Metric",
+      "w/o Score Fusion"
+    ],
+    "text_items_checked": 26,
+    "chinese_characters_found": 0,
+    "language": "English"
+  },
+  {
+    "figure": "Fig3-17_ARIMA.png",
+    "title": "ARIMA Prediction",
+    "xlabel": "Window",
+    "ylabel": "Quality Score",
+    "legend": [
+      "Real Score",
+      "ARIMA Prediction",
+      "Train/Test Split"
+    ],
+    "text_items_checked": 25,
+    "chinese_characters_found": 0,
+    "language": "English"
+  },
+  {
+    "figure": "Fig3-18_Quality.png",
+    "title": "Log Quality Score Trend",
+    "xlabel": "Window",
+    "ylabel": "Quality Score",
+    "legend": [
+      "Quality Score",
+      "Average",
+      "Good Threshold",
+      "Warning Threshold"
+    ],
+    "text_items_checked": 27,
+    "chinese_characters_found": 0,
+    "language": "English"
+  },
+  {
+    "figure": "Fig3-19_Alert.png",
+    "title": "Log Quality Warning",
+    "xlabel": "Window",
+    "ylabel": "Quality Score",
+    "legend": [
+      "Quality Score",
+      "Warning Window"
+    ],
+    "text_items_checked": 25,
+    "chinese_characters_found": 0,
+    "language": "English"
+  }
+]

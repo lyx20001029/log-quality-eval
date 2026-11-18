@@ -1,0 +1,5 @@
+﻿Metric,Average,Maximum,Minimum
+Parse Failure,0.1425,0.4,0.0
+Duplicate,0.11340000000000001,0.36,0.0
+Drift,0.10120000000000001,0.32,0.0
+Disorder,0.08469999999999998,0.36,0.0
